@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>UserAuth</servlet-name>
+        <servlet-class>UserAuth</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>BalanceEnquiryServlet</servlet-name>
+        <servlet-class>BalanceEnquiryServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoanEnquiryServlet</servlet-name>
+        <servlet-class>LoanEnquiryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserAuth</servlet-name>
+        <url-pattern>/UserAuth</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BalanceEnquiryServlet</servlet-name>
+        <url-pattern>/BalanceEnquiryServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoanEnquiryServlet</servlet-name>
+        <url-pattern>/LoanEnquiryServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
